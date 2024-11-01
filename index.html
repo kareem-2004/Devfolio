@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="./img/apple-touch-icon.png">
+  <title>DevFolio Bootstrap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./js/main.js">
+</head>
+<body>
+<!--*************************************NAV*********************************************************-->
+      <nav class="navbar navbar-expand-lg bg-black bg-opacity-75 fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white fs-3" href="#">DevFolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white fs-5" href="#home" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dropdown1</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown2</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown3</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown4</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white fs-5" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--***********************************HEADER*******************************************-->
+  <header class="vh-100 d-flex justify-content-center align-items-center text-white flex-column" id="home">
+    <h1 class="fw-bolder">I am Morgan Freeman</h1>
+    <h2 id="element"></h2>
+  </header>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ["Designer","Developer","FreeLancer","Photographer"],
+      typeSpeed: 60,
+      backspeed:35,
+      loop:true,
+    });
+  </script>
+  <!--********************************************************section-1********************************************************-->
+  <!-- <section class="bg-white py-5" id="about">
+    <div class="container p-5 shadow-lg "id="About">
+        <div class="row">  
+          <div class="col-lg-2">
+            <img class="rounded-1" src="img/testimonial-2.jpg" alt="testimonial">
+          </div>
+          <div class=" col-lg-4 ">
+            <ul class="list-unstyled">
+              <li class="py-1"><span class="fs-5 fw-bold">Name:</span> <span class="text-muted">Morgan Freeman</span></li>
+              <li class="py-1"><span class="fs-5 fw-bold">Profile:</span> <span class="text-muted">full stack developer</span></li>
+              <li class="py-1"><span class="fs-5 fw-bold">Email:</span> <span class="text-muted">contact@example.com</spa></li>
+              <li class="py-1"><span class="fs-5 fw-bold">Phone:</span> <span class="text-muted" >(617) 557-0089</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="line">About me</h2>
+            <p class="fs-5 pt-3 text-muted">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet
+              et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor
+              accumsan tincidunt.</p>
+          </div>
+          <div class="col-lg-6 pb-5">
+            <h5>Skill</h5>
+            <p class="text-muted">HTML 85%</p>
+            <div class="progress " >
+              <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 85%" aria-valuenow="85"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-muted">CSS3 75%</p>
+            <div class="progress  ">
+              <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-muted">PHP 50%</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="text-muted">JAVASCRIPT 90%</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="90"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 ">    
+            <p class="fs-5 pt-3 text-muted">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
+              volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+            <p class="fs-5 pt-3 text-muted"> Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+              porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+          </div>
+        </div>
+      </div>
+  </section> -->
+  <section class="py-5 bg-white">
+  <div class="container shadow-lg p-5">
+    <div class="row">
+      <div class="col-6">
+      <div class="row">
+      <div class="col-4">
+        <div class="image">
+          <img src="./img/testimonial-2.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-8">
+        <ul class="list-unstyled">
+          <li class="py-1"><span class="fs-5 fw-bold">Name:</span> <span class="text-muted">Morgan Freeman</span></li>
+          <li class="py-1"><span class="fs-5 fw-bold">Profile:</span> <span class="text-muted">full stack developer</span></li>
+          <li class="py-1"><span class="fs-5 fw-bold">Email:</span> <span class="text-muted">contact@example.com</spa></li>
+          <li class="py-1"><span class="fs-5 fw-bold">Phone:</span> <span class="text-muted" >(617) 557-0089</span></li>
+        </ul>
+      </div>
+      <div class="row">
+      <div class="col-12">
+        <h5>Skill</h5>
+        <p class="text-muted">HTML 85%</p>
+        <div class="progress " >
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 85%" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-muted">CSS3 75%</p>
+        <div class="progress  ">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-muted">PHP 50%</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-muted">JAVASCRIPT 90%</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="90"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-6">
+        <p class="fs-5 pt-3 text-muted">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
+          volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+        <p class="fs-5 pt-3 text-muted"> Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+          porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+          <p class="fs-5 pt-3 text-muted">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
+            volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+      </div>
+      </div>
+  </div>
+  </section>
+    <!--********************************************************section-2********************************************************-->
+  <section class="d-flex py-5" id="services">
+  <div class="container">
+    <div class="contact-title text-center py-5">
+    <h1>Services</h1>
+    <p class="line2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  <div class="row g-4">
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="icon text-center py-4">
+        <i class="fa-solid fa-briefcase align-self-center p-4 fs-1 border rounded-circle i2"></i> 
+      </div>
+      <div class="card-body text-center">
+        <h4>Web Design</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, 
+        provident vitae! Magni tempora perferendis eum non provident.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="icon text-center py-4">
+        <i class="fa-regular fa-rectangle-list align-self-center p-4 fs-1 border rounded-circle i2"></i> 
+      </div>
+      <div class="card-body text-center">
+        <h4>Web Development</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, 
+        provident vitae! Magni tempora perferendis eum non provident.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="icon text-center py-4">
+        <i class="fa-solid fa-chart-simple align-self-center p-4 fs-1 border rounded-circle i2"></i> 
+      </div>
+      <div class="card-body text-center">
+        <h4>Photography</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, 
+        provident vitae! Magni tempora perferendis eum non provident.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row pt-5 d-flex g-4">
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="icon text-center py-4" >
+          <i class="fa-solid fa-binoculars align-self-center p-4 fs-1 border rounded-circle i2"></i>
+        </div>
+        <div class="card-body text-center">
+          <h4>Responsive Design</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, 
+          provident vitae! Magni tempora perferendis eum non provident.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="icon text-center py-4">
+          <i class="fa-regular fa-sun align-self-center p-4 fs-1 border rounded-circle i2"></i>
+        </div>
+        <div class="card-body text-center">
+          <h4>Graphic Design</h4>
+          <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, 
+          provident vitae! Magni tempora perferendis eum non provident.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="icon text-center py-4">
+          <i class="fa-regular fa-calendar-days align-self-center p-4 fs-1 border rounded-circle i2"></i>
+        </div>
+        <div class="card-body text-center">
+          <h4>Marketing Services</h4>
+          <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, 
+          provident vitae! Magni tempora perferendis eum non provident.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+<!--********************************************************section-3********************************************************-->
+  <section class="sec3 mt-5 py-5">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-sm-3">
+    <div class="icon2 text-center py-4">
+      <i class="fa-solid fa-check pt-3 fs-3 border rounded-circle text-white "></i>
+      <div class="text pt-3 text-white">
+        <h1>450</h1>
+        <p>WORKS COMPLETED</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-3">
+    <div class="icon2 text-center py-4">
+      <i class="fa-solid fa-book pt-3 fs-3 border rounded-circle text-white "></i>
+      <div class="text pt-3 text-white">
+        <h1>25</h1>
+        <p>YEARS OF EXPERIENCE</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-3">
+    <div class="icon2 text-center py-4">
+      <i class="fa-solid fa-users pt-3 fs-3 border rounded-circle text-white "></i>
+      <div class="text pt-3 text-white">
+        <h1>550</h1>
+        <p>TOTAL CLIENTS</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-3">
+    <div class="icon2 text-center py-4">
+      <i class="fa-solid fa-award pt-3 fs-3 border rounded-circle text-white "></i>
+      <div class="text pt-3 text-white">
+        <h1>48</h1>
+        <p>AWARD WON</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </section>
+<!--********************************************************section-4********************************************************-->
+  <section class="py-5" id="work">
+  <div class="container">
+    <div class="portofolio-title text-center">
+      <h1>Portfolio</h1>
+      <p class="line2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="row">
+      <div class="col-md-4">
+      <figure class="card">
+          <img src="./img/work-1.jpg" class="card-img-top w-100" alt="ipad">
+          <figcaption class="card-body" >
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#img1"></i> </p>    
+          </figcaption>
+      </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="card">
+            <img src="./img/work-2.jpg" class="card-img-top w-100" alt="table">
+            <figcaption class="card-body">    
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#img2"></i> </p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="card">
+            <img src="./img/work-3.jpg" class="card-img-top w-100" alt="laptop">
+            <figcaption class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#img3"></i> </p>
+            </figcaption>
+        </figure>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-4">
+        <figure class="card">
+            <img src="./img/work-4.jpg" class="card-img-top w-100" alt="laptop with coffee">
+            <figcaption class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#img4"></i> </p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="card">
+            <img src="./img/work-5.jpg" class="card-img-top w-100" alt="table">
+            <figcaption class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#img5"></i> </p>
+            </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="card">
+            <img src="./img/work-6.jpg" class="card-img-top w-100" alt="book">
+            <figcaption class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#img6"></i> </p>
+            </figcaption>
+        </figure>
+      </div>
+      </div>
+  </div>
+<!--******************************************************** MODEL FOR section-4********************************************************-->
+<div class="modal fade" id="img1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+      <img src="./img/work-1.jpg" alt="ipad" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+      <img src="./img/work-2.jpg" alt="chair" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+      <img src="./img/work-3.jpg" alt="table" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+      <img src="./img/work-4.jpg" alt="laptop" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+      <img src="./img/work-5.jpg" alt="table" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="./img/work-6.jpg" alt="book" class="w-100">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="py-5 slider ">
+<div class="container">
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      <figure class=" m-auto w-75 text-center text-white">
+      <img src="./img/testimonial-2.jpg" class=" rounded-circle" alt="">
+      <h1>Ahmed</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, minus.</p>
+      </figure>
+      </div>
+      <div class="carousel-item">
+        <figure class=" m-auto w-75 text-center text-white">
+          <img src="./img/testimonial-4.jpg" class=" rounded-circle" alt="">
+          <h1>Sara</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, minus.</p>
+          </figure>   
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</section>
+<section class="py-5" id="blog">
+<div class="container">
+  <div class="blog-title text-center">
+    <h1>BLOG</h1>
+    <p class="line2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="row py-5 g-">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="./img/post-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="./img/testimonial-2.jpg" class="rounded-circle img1" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="./img/post-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="./img/testimonial-2.jpg" class="rounded-circle img1" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="./img/post-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="./img/testimonial-2.jpg" class="rounded-circle img1" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+</div>
+</section>
+<section class="forms py-5">
+<div class="container">
+<div class="row bg-white shadow-lg p-5">
+<div class="col-md-6">
+<div class="form">
+  <div class="title-form pb-3">
+  <h1 class="line">Send Message Us</h1>
+  </div>
+  <form>
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Your Name"  id="exampleInputEmail1">
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Your Email"  id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Subject"  id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+    <div class="button text-center">
+      <button type="button" class="btn btn-primary btn-lg rounded-5">Send Message</button>
+    </div>
+  </form>
+</div>
+</div>
+<div class="col-md-6">
+  <div class="title-form pb-3">
+    <h1 class="line">Get in Touch</h1>
+    </div>
+  <div class="text">
+  <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem 
+  expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?</p>
+  </div>
+  <div class=" pt-5">
+    <ul class="list-unstyled">
+      <li class="py-2"><span class="fs-5 text-primary"><i class="fa-solid fa-location-dot"></i> </span><span class="text-muted ms-2">329 WASHINGTON ST BOSTON, MA 02108</span></li>
+      <li class="py-2"><span class="fs-5 text-primary"><i class="fa-solid fa-mobile-screen-button"></i> </span><span class="text-muted ms-2"> (617) 557-0089</span></li>
+      <li class="py-2"><span class="fs-5 text-primary"><i class="fa-solid fa-envelope"></i> </span><span class="text-muted ms-2">contact@example.com</span></li>
+    </ul>
+  </div>
+  <div class="icons">
+    <i class="fa-brands fa-twitter text-primary fs-5"></i>
+    <i class="fa-brands fa-facebook-f text-primary ms-3 fs-5"></i>
+    <i class="fa-brands fa-instagram text-primary ms-3 fs-5"></i>
+    <i class="fa-brands fa-linkedin text-primary ms-3 fs-5"></i>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-4">
+<div class="container">
+<div class="text text-center text-white">
+<p>© Copyright DevFolio. All Rights Reserved</p>
+<p>Designed by BootstrapMade</p>
+</div>
+</div>
+</footer>
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
